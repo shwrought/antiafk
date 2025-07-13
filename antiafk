@@ -1,0 +1,47 @@
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Subtitle = Instance.new("TextLabel")
+local Signature = Instance.new("TextLabel")
+
+ScreenGui.Name = "AntiAFK_GUI"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(0, 0, 0)
+Frame.Size = UDim2.new(0, 250, 0, 120)
+Frame.Position = UDim2.new(0.5, -125, 0.4, 0)
+Frame.BorderSizePixel = 0
+Frame.Active = true
+Frame.Draggable = true
+
+Title.Name = "Title"
+Title.Parent = Frame
+Title.BackgroundTransparency = 1
+Title.Position = UDim2.new(0, 0, 0, 10)
+Title.Size = UDim2.new(1, 0, 0, 30)
+Title.Font = Enum.Font.GothamBold
+Title.Text = "Anti Afk"
+Title.TextColor3 = Color3.fromRGB(255, 0, 0)
+Title.TextScaled = true
+
+Subtitle.Name = "Subtitle"
+Subtitle.Parent = Frame
+Subtitle.BackgroundTransparency = 1
+Subtitle.Position = UDim2.new(0, 0, 0, 45)
+Subtitle.Size = UDim2.new(1, 0, 0, 25)
+Subtitle.Font = Enum.Font.Gotham
+Subtitle.Text = "Activated"
+Subtitle.TextColor3 = Color3.fromRGB(255, 0, 0)
+Subtitle.TextScaled = true
+
+Signature.Name = "Signature"
+Signature.Parent = Frame
+Signature.BackgroundTransparency = 1
+Signature.Position = UDim2.new(0, 0, 0, 75)
+Signature.Size = UDim2.new(1, 0, 0, 20)
+Signature.Font = Enum.Font.Gotham
+Signature.Text = "by ktp"
+Signature.TextColor3 = Color3.fromRGB(255, 0, 0)
+Signature.TextScaled = true
